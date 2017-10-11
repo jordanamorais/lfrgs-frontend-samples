@@ -4,8 +4,8 @@
 
 ## ADTs
 
-A bunch of [most common used ADTs for Asset Publishers](adt/README.md) and how to set them up.
+A bunch of [most common used ADTs for Asset Publishers](adt/) and how to set them up.
 
 ## Templates
 
-Some [useful templates](templates/README.md) to use in your Liferay projects.
+Some [useful templates](templates/) to use in your Liferay projects.
