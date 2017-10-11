@@ -4,7 +4,7 @@
 
 ## ADTs
 
-A bunch of [most common used ADTs for Asset Publishers](adt/) and how to set them up.
+A bunch of [most common used ADTs for Asset Publishers](adts/) and how to set them up.
 
 ## Templates
 
