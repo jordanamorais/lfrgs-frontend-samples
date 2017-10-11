@@ -1,7 +1,7 @@
 
 ## Form Validations
 
-These are some useful aui taglib form validators examples:
+These are some useful aui taglib form validator examples:
 
 * [Validate Age](examples/validate-age.jsp)
 * [Validate Credit Card](examples/validate-credit-card.jsp)
@@ -18,4 +18,4 @@ These are some useful aui taglib form validators examples:
 
 ### Forms and Validation Tips
 
-You can find more examples or tips at [Liferay Official Docs about Forms and Validations](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/forms-and-validation)
+You can find more examples or tips at [Liferay Official Docs about Forms and Validations](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/forms-and-validation).
