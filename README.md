@@ -18,6 +18,10 @@ Some [useful and common validators](validators/) to use in your Liferay projects
 
 Some [theme boilerplates and theme tips](themes/) for your Liferay projects.
 
+## Responsive
+
+Some [responsive utilities and tips](responsive/) for your Liferay themes.
+
 ## Modules
 
 Some [modules boilerplates and tips](modules/) for your Liferay projects.
