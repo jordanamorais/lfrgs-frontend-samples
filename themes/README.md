@@ -34,8 +34,7 @@ Just copy and paste the `scss-lint.yml` file into your theme root folder.
 * Install *scss-lint* Extension.
 * Install the *required ruby gem*:
 
-```
-bash
+```bash
 sudo gem install -n /usr/local/bin sass_lint
 ```
 
