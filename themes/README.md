@@ -41,7 +41,7 @@ sudo npm install -g generator-liferay-theme
 > This theme contains Bootstrap + Lexicon/Clay.
 
 ```js
-gulp extend // than select 'styled' theme
+gulp extend // then select 'styled' theme
 ```
 
 #### Unstyled theme
@@ -49,7 +49,7 @@ gulp extend // than select 'styled' theme
 > This theme contains pure Bootstrap 3.
 
 ```js
-gulp extend // than select 'unstyled' theme
+gulp extend // then select 'unstyled' theme
 ```
 
 #### Atlas Theme 
