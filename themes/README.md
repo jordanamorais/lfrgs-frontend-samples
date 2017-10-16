@@ -1,62 +1,80 @@
 ## Themes
 
+* [Theme Boilerplates](#theme-boilerplates)
+* [Creating a theme](#creating-a-theme)
+    * [Installing Gulp and Yeoman](#installing-gulp-and-yeoman)
+    * [Installing liferay-theme tasks](#installing-liferay-theme-tasks)
+    * [Styled theme](#styled-theme)
+    * [Unstyled theme](#unstyled-theme)
+    * [Atlas theme](#atlas-theme)
+    * [Know which base theme you are using](#know-which-base-theme-you-are-using)
+    * [Set the bundle which theme will be deployed](#set-the-bundle-which-theme-will-be-deployed)
+* [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
+* [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
+* [Utilities](#utilities)
+* [SCSS Linter](#scss-linter)
+    * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
+
+
 ### Theme Boilerplates
 
 * [AngularJS theme example](https://github.com/clovisdasilvaneto/Liferay-AngularJs-Theme)
 
-### Theme Tips and Tricks
+### Creating a theme
 
-#### Creating a theme
+#### Installing Gulp and Yeoman
 
-##### Installing Gulp and Yeoman
-
-```gulp
+```js
 sudo npm install -g yo gulp
 ```
 
-##### Installing `liferay-theme` tasks
+#### Installing liferay-theme tasks
 
-```gulp
+```js
 sudo npm install -g generator-liferay-theme
 ```
 
-##### Theme with Bootstrap + Lexicon/Clay (Styled theme)
+#### Styled theme
 
 > This is the default base theme, when you execute yeoman for the first time to create a theme.
+> This theme contains Bootstrap + Lexicon/Clay.
 
-```gulp
+```js
 gulp extend // than select 'styled' theme
 ```
 
-##### Theme with pure Bootstrap 3 (Unstyled theme)
+#### Unstyled theme
 
-```gulp
+> This theme contains pure Bootstrap 3.
+
+```js
 gulp extend // than select 'unstyled' theme
 ```
 
-##### Theme with Bootstrap + Lexicon/Clay + Atlas Theme
+#### Atlas Theme 
 
+> This theme contains Bootstrap + Lexicon/Clay + Atlas Theme.
 > Atlas theme override some settings of Lexicon and Bootstrap. So: Atlas > Lexicon > Bootstrap.
 
-```gulp
+```js
 gulp kickstart
 ```
 
-##### Know which base theme you are using
+#### Know which base theme you are using
 
-```gulp
+```js
 gulp status
 ```
 
-##### Set the bundle which theme will be deployed
-
-```gulp
-gulp init
-```
+#### Set the bundle which theme will be deployed
 
 > This will override the `liferay-theme.json` of your theme.
 
-#### Embed Liferay portlets in theme
+```js
+gulp init
+```
+
+### Embed Liferay portlets in theme
 
 > Typically these codes are embeded inside _portal-normal.ftl_ or other theme ftls inside _templates_ theme folder.
 
@@ -64,22 +82,22 @@ gulp init
 * [Embed Breadcrumb Portlet](examples/embed-breadcrumb-portlet.ftl)
 * [Embed User Toolbar](examples/embed-user-toolbar.ftl)
 
-#### Embed a Custom Portlet in theme
+### Embed a Custom Portlet in theme
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
 
-#### Utilities
+### Utilities
 
 * [User actionbar example getting user portrait url and portal logout](examples/user-actionbar-with-user-portrait.ftl)
 
-#### SCSS Linter
+### SCSS Linter
 
 A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
 Just copy and paste the `scss-lint.yml` file into your theme root folder.
 
 > FYI: You need to install the [scss-lint](https://github.com/brigade/scss-lint).
 
-##### Installing SCSS linter on VSCode
+#### Installing SCSS linter on VSCode
 
 * Install *scss-lint* Extension.
 * Install the *required ruby gem*:
