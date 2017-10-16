@@ -10,13 +10,13 @@
 
 ##### Installing Gulp and Yeoman
 
-```javascript
+```gulp
 sudo npm install -g yo gulp
 ```
 
 ##### Installing `liferay-theme` tasks
 
-```javascript
+```gulp
 sudo npm install -g generator-liferay-theme
 ```
 
@@ -24,13 +24,13 @@ sudo npm install -g generator-liferay-theme
 
 > This is the default base theme, when you execute yeoman for the first time to create a theme.
 
-```javascript
+```gulp
 gulp extend // than select 'styled' theme
 ```
 
 ##### Theme with pure Bootstrap 3 (Unstyled theme)
 
-```javascript
+```gulp
 gulp extend // than select 'unstyled' theme
 ```
 
@@ -38,24 +38,23 @@ gulp extend // than select 'unstyled' theme
 
 > Atlas theme override some settings of Lexicon and Bootstrap. So: Atlas > Lexicon > Bootstrap.
 
-```javascript
+```gulp
 gulp kickstart
 ```
 
 ##### Know which base theme you are using
 
-```javascript
+```gulp
 gulp status
 ```
 
 ##### Set the bundle which theme will be deployed
 
-```javascript
+```gulp
 gulp init
 ```
 
 > This will override the `liferay-theme.json` of your theme.
-
 
 #### Embed Liferay portlets in theme
 
