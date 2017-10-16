@@ -1,0 +1,35 @@
+// Phones
+// --
+@include media-query(null, $screen-xs-max) {}
+
+// Small screen / tablet
+// --
+
+// min
+@include media-query(null, $screen-sm-min) {} // or $screen-tablet
+
+// max
+@include media-query(null, $screen-sm-max) {}
+
+// Medium screen / desktop
+// --
+
+// min
+@include media-query(null, $screen-md-min) {} // or $screen-desktop
+
+// Large screen / wide desktop
+// --
+
+// min
+@include media-query(null, $screen-lg-min) {} // or $screen-lg-desktop
+
+// ($screen-lg-min - 1)
+@include media-query(null, $screen-md-max) {}
+
+// Shortcuts
+// --
+// See https://github.com/liferay/com-liferay-frontend-css/blob/master/frontend-css-common/src/main/resources/META-INF/resources/liferay/_media_query.scss
+@mixin xs {}
+@mixin sm {}
+@mixin md {}
+@mixin lg {}
