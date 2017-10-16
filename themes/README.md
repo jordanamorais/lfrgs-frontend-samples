@@ -25,7 +25,17 @@
 #### SCSS Linter
 
 A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
-Just copy and paste the '.scss-lint.yml' file into your theme root folder.
+Just copy and paste the `scss-lint.yml` file into your theme root folder.
 
 > FYI: You need to install the [scss-lint](https://github.com/brigade/scss-lint).
+
+#### Installing SCSS linter on VSCode
+
+* Install *scss-lint* Extension.
+* Install the *required ruby gem*:
+
+```
+bash
+sudo gem install -n /usr/local/bin sass_lint
+```
 
