@@ -1,6 +1,6 @@
 ## ADTs
 
-These are the common used ADTs for Asset Publishers:
+These are some commonly used ADTs for Asset Publishers:
 
 * [Asset publisher list](examples/asset-publisher-list.ftl)
 * [Asset publisher list with download asset link](examples/asset-publisher-list-with-download.ftl)
