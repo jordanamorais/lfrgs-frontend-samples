@@ -8,7 +8,7 @@ A bunch of [most common used ADTs for Asset Publishers](adts/) and how to set th
 
 ## Templates
 
-Some [useful templates](templates/) to use in your Liferay projects.
+Some [useful content templates](templates/) to use in your Liferay projects.
 
 ## Form validations
 
