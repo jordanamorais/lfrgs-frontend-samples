@@ -18,3 +18,7 @@ Normally these codes are embeded inside _portal-normal.ftl_ or other theme ftls 
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
 
+####  Utilities
+
+* [User actionbar example getting user portrait url and logout](examples/user-actionbar-with-user-portrait.ftl)
+
