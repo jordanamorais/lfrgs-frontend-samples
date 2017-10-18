@@ -1,13 +1,13 @@
-# Frontend Samples and Utilities
+# Frontend Samples, Tips and Utilities
 
-> Some useful kick-starter boilerplates and files to improve GS Frontend Development and Liferay content configuration.
+> Some useful kick-starter boilerplates, tips and files to improve GS Frontend Development and Liferay content configuration.
 
 * [ADTs](#adts)
 * [Templates](#templates)
 * [Form validations](#form-validations)
 * [Themes](#themes)
 * [Responsive](#responsive)
-* [Modules](#modules)
+* [OSGi Modules](#OSGi-modules)
 
 ---
 
@@ -31,7 +31,7 @@ Some [theme boilerplates and theme tips](themes/) for your Liferay projects.
 
 Some [responsive utilities and tips](responsive/) for your Liferay themes.
 
-## Modules
+## OSGi Modules
 
-Some [modules boilerplates and tips](modules/) for your Liferay projects.
+Some [OSGi modules boilerplates and tips](modules/) for your Liferay projects.
 
