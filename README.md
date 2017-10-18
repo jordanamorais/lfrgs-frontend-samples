@@ -7,7 +7,7 @@
 * [Form validations](#form-validations)
 * [Themes](#themes)
 * [Responsive](#responsive)
-* [OSGi Modules](#OSGi-modules)
+* [OSGi Modules](#osgi-modules)
 
 ---
 
