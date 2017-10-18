@@ -29,7 +29,7 @@ Fragment-Host: com.liferay.portal.search.web;bundle-version="1.2.5"
 ```
 where `com.liferay.portal.search.web` is the _Bundle-SymbolicName_ of the portlet which I want to override and `bundle-version` is the Bundle Version of this portlet too. You can see this detailed information in portlet manifest.
 
-> For how to discover the portlet symbolic name, check the [useful telnet and gogo shell commands]](#useful-telnet-and-gogo-shell-commands) section.
+> For how to discover the portlet symbolic name, check the [useful telnet and gogo shell commands](#useful-telnet-and-gogo-shell-commands) section.
 
 * To override the _JSP_ file you want, put a copy of the original JSP file inside `src > main > resources > META-INF > resources`.
 * Start to work in your custom file.
