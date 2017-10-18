@@ -2,7 +2,7 @@
 
 * [Custom modules samples](#custom-modules-samples)
 * [OSGi Modules Tips](#osgi-modules-tips)
-    *[Creating a module fragment that overrides another module](#creating-a-module-fragment-that-overrides-another-module)
+    * [Creating a module fragment that overrides another module](#creating-a-module-fragment-that-overrides-another-module)
 * [Useful telnet and gogo shell commands](#useful-telnet-and-gogo-shell-commands)
 
 ---
