@@ -1,9 +1,9 @@
 ## Modules
 
-[Custom modules samples](#custom-modules-samples)
-[OSGI Modules Tips](#osgi-modules-tips)
+* [Custom modules samples](#custom-modules-samples)
+* [OSGI Modules Tips](#osgi-modules-tips)
     [Creating a module fragment that overrides another module](#creating-a-module-fragment-that-overrides-another-module)
-[Useful telnet and gogo shell commands](#useful-telnet-and-goog-shell-commands)
+* [Useful telnet and gogo shell commands](#useful-telnet-and-goog-shell-commands)
 
 ---
 
