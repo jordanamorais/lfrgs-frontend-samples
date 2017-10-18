@@ -46,42 +46,42 @@ Java: // CUSTOM BEGIN // CUSTOM END
 
 * To connect telnet with your local bundle so you can use gogo shell.
 
-```script
+```js
 telnet localhost 11311
 ```
 
 * To see the list of available modules with your current lifecycle status
 
-```script
+```js
 lb
 ```
 
 * To see the modules manifesto file (where you can see the symbolic name, bundle vertion etc)
 
-```script
+```js
 headers <module's id number>
 ```
 
 * To find modules with a specific keyword
 
-```script
+```js
 lb <keyword> // ex: lb search
 ```
 
 * To stop some module
 
-```script
+```js
 stop <module's id number>
 ```
 
 * To uninstall module
 
-```script
+```js
 uninstall <module's id number>
 ```
 
 * To verify problems with some module
 
-```script
+```js
 diag <module's id number>
 ```
