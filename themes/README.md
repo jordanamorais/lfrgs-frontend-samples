@@ -38,6 +38,11 @@ sudo npm install -g generator-liferay-theme
 #### Styled theme
 
 > This is the default base theme, when you execute yeoman for the first time to create a theme.
+
+```js
+yo  // then, select Liferay Theme and follow the steps.
+```
+
 > This theme contains Bootstrap + Lexicon/Clay.
 
 ```js
