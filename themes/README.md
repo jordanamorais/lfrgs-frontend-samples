@@ -101,7 +101,7 @@ gulp init
 
 ### Developer Mode Properties and Cache Issues
 
-This is a list of the most used properties to Develop without cache issues. You can see the list of all Portal Properties [here].(https://docs.liferay.com/portal/7.0/propertiesdoc/portal.properties.html)
+This is a list of the most used properties to Develop without cache issues. You can see the list of all Portal Properties [here](https://docs.liferay.com/portal/7.0/propertiesdoc/portal.properties.html).
 
 > FYI: You must have your own `portal-developer.properties` and `portal-ext.properties` in your Liferay Home Bundle dir in order to override the portal default properties and enable Developer Mode.
 
