@@ -6,6 +6,7 @@
 * [Templates](#templates)
 * [Form validations](#form-validations)
 * [Themes](#themes)
+* [Developer Mode properties and cache issues](#developer-mode-properties-and-cache-issues)
 * [Responsive](#responsive)
 * [OSGi Modules](#osgi-modules)
 * [Metal Charts](#metal-charts)
@@ -27,6 +28,10 @@ Some [useful and common validators](validators/) to use in your Liferay projects
 ## Themes
 
 Some [theme boilerplates and theme tips](themes/) for your Liferay projects.
+
+## Developer Mode properties and cache issues
+
+Some [useful list of most used properties for Developer Mode](developer-mode/).
 
 ## Responsive
 
