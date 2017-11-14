@@ -2,15 +2,6 @@
 
 > Some useful kick-starter boilerplates, tips and files to improve GS Frontend Development and Liferay content configuration.
 
-* [ADTs](#adts)
-* [Templates](#templates)
-* [Form validations](#form-validations)
-* [Themes](#themes)
-* [Developer Mode properties and cache issues](#developer-mode-properties-and-cache-issues)
-* [Responsive](#responsive)
-* [OSGi Modules](#osgi-modules)
-* [Metal Charts](#metal-charts)
-
 ---
 
 ## ADTs
