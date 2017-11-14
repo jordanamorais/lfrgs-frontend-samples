@@ -1,4 +1,4 @@
-### Developer Mode Properties and Cache Issues
+## Developer Mode Properties and Cache Issues
 
 This is a list of the most used properties to Develop without cache issues. You can see the list of all Portal Properties [here](https://docs.liferay.com/portal/7.0/propertiesdoc/portal.properties.html).
 
