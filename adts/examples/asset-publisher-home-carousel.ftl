@@ -10,7 +10,7 @@
             <#assign xPathSelector = saxReaderUtil.createXPath("dynamic-element[@name='imagen']")>
             <#assign imagen = xPathSelector.selectSingleNode(rootElement).getStringValue()>
             <#assign xPathSelector = saxReaderUtil.createXPath("dynamic-element[@name='enlaceExterno']")>
-            <#--  Trim is needed to avoid blank spaces when the filed is empty  -->
+            <#--  Trim is needed to avoid blank spaces when the field is empty  -->
             <#assign enlaceExterno = xPathSelector.selectSingleNode(rootElement).getStringValue()?trim>
             <#assign viewURL = assetPublisherHelper.getAssetViewURL(renderRequest, renderResponse, curEntry) />
 
