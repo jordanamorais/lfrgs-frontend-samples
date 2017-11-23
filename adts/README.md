@@ -6,6 +6,7 @@ These are some common used ADTs for Asset Publishers:
 * [Asset publisher list with download asset link](examples/asset-publisher-list-with-download.ftl)
 * [Asset publisher list with "view in context" render setting](examples/asset-publisher-list-view-in-context.ftl)
 * [Asset publisher Carousel Banner](examples/asset-publisher-home-carousel.ftl)
+* [Asset publisher list with Liferay Link to Page (mounting friendly URL)](examples/asset-publisher-list-with-liferay-link-to-page.ftl)
 
 ### How to create an ADT and configure it for an Asset Publisher
 
