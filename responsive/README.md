@@ -15,7 +15,7 @@ About the available responsive media query mixin:
 
 ```sass
 
-@include media-qiery(null, $responsive-breakpoint-variable) {
+@include media-query(null, $responsive-breakpoint-variable) {
     ...
 }
 ```
@@ -24,7 +24,7 @@ About the available responsive media query mixin:
 
 ```sass
 
-@include media-qiery($responsive-breakpoint-variable, null) {
+@include media-query($responsive-breakpoint-variable, null) {
     ...
 }
 ```
