@@ -20,7 +20,7 @@ About the available responsive media query mixin:
 }
 ```
 
-> For media querie with `min-width` (useful for mobile-first approach), use:
+> For media queries with `min-width` (useful for mobile-first approach), use:
 
 ```sass
 
