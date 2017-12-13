@@ -14,6 +14,7 @@
 * [FTL Utilities](#utilities)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
+* [Resources Importer Tips](#resources-importer-tips)
 
 ---
 

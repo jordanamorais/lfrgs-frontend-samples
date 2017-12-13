@@ -32,6 +32,10 @@ Some [responsive utilities and tips](responsive/) for your Liferay themes.
 
 Some [OSGi modules boilerplates and tips](modules/) for your Liferay projects.
 
+## Resources Importer Tips
+
+Some [Resources Importer Tips](resources-importer/) for your Liferay Theme projects.
+
 ## Metal Charts
 
 * MetalJS Charts [examples](https://hosting-metalcharts.wedeploy.io/).
