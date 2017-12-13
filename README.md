@@ -32,9 +32,9 @@ Some [responsive utilities and tips](responsive/) for your Liferay themes.
 
 Some [OSGi modules boilerplates and tips](modules/) for your Liferay projects.
 
-## Resources Importer Tips
+## Resources Importer
 
-Some [Resources Importer Tips](resources-importer/) for your Liferay Theme projects.
+Some [Resources Importer tips](resources-importer/) for your Liferay Theme projects.
 
 ## Metal Charts
 
