@@ -11,7 +11,7 @@
     * [Set the bundle which theme will be deployed](#set-the-bundle-which-theme-will-be-deployed)
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
-* [FTL Utilities](#utilities)
+* [FTL Utilities](#ftl-utilities)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
 
