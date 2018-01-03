@@ -1,4 +1,4 @@
-# Frontend Samples, Tips and Utilities
+# Liferay Frontend Samples, Tips and Utilities
 
 > Some useful kick-starter boilerplates, tips and files to improve GS Frontend Development and Liferay content configuration.
 
