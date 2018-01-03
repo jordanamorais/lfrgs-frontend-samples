@@ -97,6 +97,14 @@ gulp init
 * [User actionbar example getting user portrait url and portal logout](examples/user-actionbar-with-user-portrait.ftl)
 * [Sign-in and sign-out](examples/signin-and-signout.ftl)
 
+#### Language in FTL files
+
+```freemarker
+<@liferay.language key="your-key-value" />
+```
+
+> FYI: You can create a **Language.properties** file in the following folder of your theme: **WEB-INF > src > content**
+
 ### SCSS Linter
 
 A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
