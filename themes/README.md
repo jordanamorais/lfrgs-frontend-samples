@@ -11,7 +11,7 @@
     * [Set the bundle which theme will be deployed](#set-the-bundle-which-theme-will-be-deployed)
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
-* [FTL Utilities](#ftl-utilities)
+* [Freemarker Utilities](#freemarker-utilities)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
 
@@ -92,7 +92,7 @@ gulp init
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
 
-### FTL Utilities
+### Freemarker Utilities
 
 * [User actionbar example getting user portrait url and portal logout](examples/user-actionbar-with-user-portrait.ftl)
 * [Sign-in and sign-out](examples/signin-and-signout.ftl)
