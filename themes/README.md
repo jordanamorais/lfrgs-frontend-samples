@@ -142,7 +142,7 @@ ${my_theme_setting_boolean?then('Y' , 'N')}
 <a href="${my_theme_setting_boolean?then(routeURLChild , childItem.getURL())}">
 ```
 
-> *FYI:* You can see a full example in the following file: [Navigation with mounted URLs changing / to #](examples/navigation-mouting-urls-with-route.ftl)
+> FYI: You can see a full example in the following file: [Navigation with mounted URLs changing / to #](examples/navigation-mouting-urls-with-route.ftl)
 
 #### Language in FTL files
 
