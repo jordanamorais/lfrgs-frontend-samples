@@ -97,6 +97,50 @@ gulp init
 * [User actionbar example getting user portrait url and portal logout](examples/user-actionbar-with-user-portrait.ftl)
 * [Sign-in and sign-out](examples/signin-and-signout.ftl)
 
+#### FTL useful variables
+
+> Get PortalURL
+
+```freemarker
+<#assign portalURL = themeDisplay.getPortalURL()>
+
+<#-- Output -->
+http://localhost:8080
+```
+
+> Get CurrentURL
+
+```freemarker
+<#assign currentURL = themeDisplay.getURLCurrent()>
+
+<#-- Output -->
+ /web/site-name
+```
+
+> Mount FullURL
+
+```freemarker
+<#assign portalCurrentURL = themeDisplay.getPortalURL() + themeDisplay.getURLCurrent()>
+
+<#-- Output -->
+http://localhost:8080/web/site-name
+```
+
+> Theme Setting trick to use with ternary operator (as boolean)
+
+```freemarker
+<#if my_theme_setting != "false">
+    <#assign my_theme_setting_boolean = true>
+<#else>
+    <#assign my_theme_setting_boolean = false>
+</#if>
+
+<#-- So, you can use ternary operator in a href, for instance, like this -->
+${my_theme_setting_boolean?then('Y' , 'N')}
+```
+
+*FYI:* You can see a full example in the following file: (Navigation with mounted URLs changing / to #)(examples/navigation-mouting-urls-with-route.ftl)
+
 #### Language in FTL files
 
 ```freemarker
