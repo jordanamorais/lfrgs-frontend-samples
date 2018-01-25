@@ -67,6 +67,10 @@ headers <modules id number>
 ```js
 lb <keyword> 
 // ex: lb search
+
+//or
+
+lb | grep <keyword>
 ```
 
 * To stop some module
@@ -85,4 +89,16 @@ uninstall <modules id number>
 
 ```js
 diag <modules id number>
+```
+
+* Close telnet and shutdown tomcat
+
+```js
+exit
+```
+
+* Close only telnet
+
+```js
+disconnet
 ```
