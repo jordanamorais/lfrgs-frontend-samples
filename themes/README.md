@@ -99,6 +99,18 @@ gulp init
 
 #### FTL useful variables
 
+> Get Full URL (in navigation pages)
+
+```freemarker
+${grandChild.getURL()}
+```
+
+> Get Public URL
+
+```freemarker
+${themeDisplay.getPathFriendlyURLPublic()}
+```
+
 > Get PortalURL
 
 ```freemarker
