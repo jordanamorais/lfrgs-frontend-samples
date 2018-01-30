@@ -167,11 +167,11 @@ ${my_theme_setting_boolean?then('Y' , 'N')}
 
 ### Theme Settings
 
-In order to understand and create the theme sertings, follow the steps of [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
+In order to understand more about theme settings, checkt out the [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
 
 #### To get boolean for checkbox theme setting
 
-In `liferay-look-and-feel.xml` , create the settting on <setttings> as a checkbox:
+In `liferay-look-and-feel.xml` , create the settting <setttings> as a checkbox:
 
 ```freemarker
 <setting configurable="true" key="show-main-search" type="checkbox" value="true" />
