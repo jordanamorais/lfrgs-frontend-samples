@@ -12,6 +12,7 @@
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
 * [Freemarker Utilities](#freemarker-utilities)
+* [Theme Settings](#theme-settings)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
 
@@ -163,6 +164,37 @@ ${my_theme_setting_boolean?then('Y' , 'N')}
 ```
 
 > FYI: You can create a **Language.properties** file in the following folder of your theme: **WEB-INF > src > content**
+
+### Theme Settings
+
+In order to understand and create the theme sertings, follow the steps of [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
+
+#### To get boolean for checkbox theme setting
+
+In `liferay-look-and-feel.xml` , create the settting on <setttings> as a checkbox:
+
+```freemarker
+<setting configurable="true" key="show-main-search" type="checkbox" value="true" />
+```
+
+In `WEB-INF/src/content/Language.properties` create the key value for this theme setting.
+
+In `init_custom.ftl` file, assign the variable getting as boolean:
+
+```freemarker
+<#--  Show Search  -->
+<#assign show_main_search = getterUtil.getBoolean(theme_settings["show-main-search"])>
+```
+
+To validate the variable, create somthing like this in your FTL files:
+
+```freemarker
+<#if show_main_search>
+...
+</#if>
+```
+
+
 
 ### SCSS Linter
 
