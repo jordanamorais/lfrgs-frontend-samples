@@ -1,4 +1,4 @@
-## Themes
+## Themes and Freemarker
 
 * [Theme Boilerplates](#theme-boilerplates)
 * [Creating a theme](#creating-a-theme)
@@ -153,6 +153,15 @@ ${my_theme_setting_boolean?then('Y' , 'N')}
 
 <#-- For instance, to use in a href like this -->
 <a href="${my_theme_setting_boolean?then(routeURLChild , childItem.getURL())}">
+```
+
+> Get User Last Login Date
+
+```freemarker
+<#assign user_last_login_date = user.getLastLoginDate()?string('dd/MM/yyyy HH:mm:ss')>
+
+<#-- Output -->
+12/03/2018 13:22:24
 ```
 
 > FYI: You can see a full example in the following file: [Navigation with mounted URLs changing / to #](examples/navigation-mouting-urls-with-route.ftl)

@@ -16,9 +16,9 @@ Some [useful content templates](templates/) to use in your Liferay projects.
 
 Some [useful and common validators](validators/) to use in your Liferay projects.
 
-## Themes
+## Themes and Freemarker
 
-Some [theme boilerplates and theme tips](themes/) for your Liferay projects.
+Some [theme boilerplates, tips and freemarker utilities](themes/) for your Liferay projects.
 
 ## Developer Mode properties and cache issues
 
