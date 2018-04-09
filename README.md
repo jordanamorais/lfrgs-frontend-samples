@@ -12,9 +12,9 @@ A list of the [most common used ADTs for Asset Publishers](adts/) and how to set
 
 Some [useful content templates](templates/) to use in your Liferay projects.
 
-## Form validations
+## Taglibs (AUI Forms, validators, etc for JSP Portlets)
 
-Some [useful and common validators](validators/) to use in your Liferay projects.
+Some [useful and useful Taglib Tips](taglibs/) for your Liferay projects.
 
 ## Themes and Freemarker
 

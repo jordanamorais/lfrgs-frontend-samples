@@ -1,7 +1,17 @@
 
-## Form Validations
+## Taglib Tips
+
+* [AUI Taglib](#aui-taglib)
+
+---
+
+### AUI Taglib
+
+#### AUI Forms
 
 These are some useful aui taglib form validator examples:
+
+> AUI Form Validators
 
 * [Validate Age](examples/validate-age.jsp)
 * [Validate Credit Card](examples/validate-credit-card.jsp)
@@ -16,6 +26,10 @@ These are some useful aui taglib form validator examples:
 * [Validate Url Address](examples/validate-url-address.jsp)
 * [Validate User Name](examples/validate-user-name.jsp)
 
-### Forms and Validation Tips
+> Form attributes list
+
+You can find a useful list about the available [AUI Forms atrributes here](https://web.liferay.com/community/wiki/-/wiki/Main/Alloy+UI+Forms+%28aui%29/pop_up?controlPanelCategory=portlet_36#section-Alloy+UI+Forms+(aui)-Attributes)
+
+> Forms and Validation Tips
 
 You can find more examples or tips at [Liferay Official Docs about Forms and Validations](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/forms-and-validation).
