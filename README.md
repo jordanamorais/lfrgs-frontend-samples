@@ -14,7 +14,7 @@ Some [useful content templates](templates/) to use in your Liferay projects.
 
 ## Taglibs (AUI Forms, validators, etc for JSP Portlets)
 
-Some [useful and useful Taglib Tips](taglibs/) for your Liferay projects.
+Some [useful Taglib Tips](taglibs/) for your Liferay projects.
 
 ## Themes and Freemarker
 

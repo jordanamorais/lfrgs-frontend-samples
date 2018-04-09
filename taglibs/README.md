@@ -1,5 +1,5 @@
 
-## Taglib Tips
+## Taglibs
 
 * [AUI Taglib](#aui-taglib)
 
