@@ -218,6 +218,6 @@ Just copy and paste the `scss-lint.yml` file into your theme root folder.
 * Install the *required ruby gem*:
 
 ```bash
-sudo gem install -n /usr/local/bin sass_lint
+sudo gem install scss_lint
 ```
 
