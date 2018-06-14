@@ -97,17 +97,16 @@
                         ${videoPath}
                     </div>
 
-                    <div id="video-remote">
+                    <div id="youtube-video-container">
                         <#--  youtube  -->
-                        <iframe class="video-preview-area youtube-video-asset video-aspect-ratio" src="${videoPath}" frameborder="0" width="100%" allowfullscreen></iframe> 
+                        <iframe class="youtube-video-preview youtube-video-asset video-aspect-ratio" src="" frameborder="0" width="100%" allowfullscreen></iframe> 
                     </div>
-                    <div id="video-local">
+                    <div id="liferay-video-container">
                         <#--  documents and media  -->
-                        <video class="video-aspect-ratio" id="video-local-instance" width="100%" controls allowfullscreen preload="metadata">
-                            <source class="video-preview-area" src="${videoPath}" type="video/mp4">
+                        <video class="video-aspect-ratio" id="liferay-video-instance" width="100%" controls allowfullscreen preload="metadata">
+                            <source class="liferay-video-preview" src="" type="video/mp4">
                         </video>
                     </div>
-            
                 </div>
             </div>
         </div>
@@ -139,37 +138,50 @@
 <script type="text/javascript">
 
     $(document).ready(function() {
+        // common video 
         var videoTrigger = $('.video-trigger');
-        var videoPreviewArea = $('.video-preview-area');
         var videoPreviewTitle = $('.video-preview-title');
-        var videoLocal = $('#video-local');
-        var videoLocalInstance = $('#video-local-instance');
-        var videoRemote = $('#video-remote');
         var firstVideoUrl = $('.first-video-url-path').text().trim();
 
+        // liferay video
+        var liferayVideoContainer = $('#liferay-video-container');
+        var liferayVideoPreview = $('.liferay-video-preview');
+        var liferayVideoInstance = $('#liferay-video-instance');
+
+        // youtube video
+        var youtubeVideoPreview = $('.youtube-video-preview');
+        var youtubeVideoContainer = $('#youtube-video-container');
+
+        // Check and preview the type of video when page loads
         validateURL(firstVideoUrl);
 
+        // Change video according the trigger
         videoTrigger.click(function() {
 
             var videoUrl = $(this).find('.video-url-value').text().trim();
             var videoTitle = $(this).find('.video-given-name').text().trim();
 
-            videoPreviewArea.attr('src', videoUrl);
             videoPreviewTitle.text(videoTitle);
 
+            // Check if video is youtube or liferay video from Documents
             validateURL(videoUrl);
         })
 
         function validateURL(videoURLParameter) {
-            var isHttp = videoURLParameter.indexOf('http');
-            if (isHttp === 0) {
-                videoLocal.hide();
-                videoRemote.show();
-            } else {
-                videoLocal.show();
-                videoRemote.hide();
+            // Must return boolean for toggle visibility logic
+            var isYoutube = videoURLParameter.indexOf('http') === 0;
+            
+            liferayVideoContainer.toggle(!isYoutube);
+            youtubeVideoContainer.toggle(isYoutube);
 
-                videoLocalInstance.load();
+            if (isYoutube) {
+                youtubeVideoPreview.attr('src', videoURLParameter);
+
+            } else {
+                liferayVideoPreview.attr('src', videoURLParameter);
+
+                // Needed to pre-load the video in html5 video tag
+                liferayVideoInstance.load();
             }
         }
     });
