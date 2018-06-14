@@ -1,0 +1,56 @@
+{
+    "availableLanguageIds": [
+        "es_ES"
+    ],
+    "defaultLanguageId": "es_ES",
+    "fields": [
+        {
+            "label": {
+                "es_ES": "Titulo del video"
+            },
+            "predefinedValue": {
+                "es_ES": ""
+            },
+            "style": {
+                "es_ES": ""
+            },
+            "tip": {
+                "es_ES": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": false,
+            "name": "tituloVideo",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "es_ES": "Enlace del video"
+                    },
+                    "predefinedValue": {
+                        "es_ES": ""
+                    },
+                    "style": {
+                        "es_ES": ""
+                    },
+                    "tip": {
+                        "es_ES": "Este es el enlace del video que va a ser cargado. Puedes utilizar un enlace del YouTube o si quiere que sea un video de la Galeria Multimedia, hay de utilizar el enlace de descarga desde /documents, por ejemplo, si el enlace es http://localhost:8080/documents/31730/33070/video.mp4/3942a38b-9daa-9e9c-5dd4-04389089acfe debes utilizar solamente desde /documents/31730/33070/video.mp4/3942a38b-9daa-9e9c-5dd4-04389089acfe"
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "enlaceVideo",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
