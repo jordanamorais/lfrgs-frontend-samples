@@ -214,8 +214,8 @@ Just copy and paste the `scss-lint.yml` file into your theme root folder.
 
 #### Installing SCSS linter on VSCode
 
-* Install *scss-lint* Extension.
-* Install the *required ruby gem*:
+* Install *scss-lint* Extension on VSCode.
+* Install the *required ruby gem* below:
 
 ```bash
 sudo gem install scss_lint
