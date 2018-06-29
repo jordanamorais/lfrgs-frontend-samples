@@ -203,8 +203,6 @@ To validate the variable, create somthing like this in your FTL files:
 </#if>
 ```
 
-
-
 ### SCSS Linter
 
 A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
@@ -214,10 +212,10 @@ Just copy and paste the `scss-lint.yml` file into your theme root folder.
 
 #### Installing SCSS linter on VSCode
 
-* Install *scss-lint* Extension on VSCode.
 * Install the *required ruby gem* below:
 
 ```bash
 sudo gem install scss_lint
 ```
 
+* Install *scss-lint* Extension on VSCode.
