@@ -14,6 +14,12 @@ minifier.enabled=false
 * Disable CSS combined and loaded as a single file (for easier debugging)
 
 ```java
+#
+# Set this property to true to load the theme's merged CSS files for faster
+# loading for production. Set this property to false for easier debugging
+# for development. You can also disable fast loading by setting the URL
+# parameter "css_fast_load" to "0".
+#
 theme.css.fast.load=false
 ```
 
@@ -32,6 +38,13 @@ browser.launcher.url=
 * Disable packed version of JS files (for easier debugging)
 
 ```java
+#
+# Set this property to true to load the combined JavaScript files from the
+# property "javascript.files" into one compacted file for faster loading for
+# production. Set this property to false for easier debugging for
+# development. You can also disable fast loading by setting the URL
+# parameter "js_fast_load" to "0".
+#
 javascript.fast.load=true
 ```
 
