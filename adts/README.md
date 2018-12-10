@@ -13,6 +13,7 @@ These are some common used ADTs for Asset Publishers:
 ### For Navigation
 
 * [Navigation ADT with active page](examples/site-navigation.ftl)
+* [Footer Navigation ADT](examnples/footer-site-navigation.ftl)
 
 > FYI: [Here](https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-navigation/site-navigation-menu-web/src/main/resources/com/liferay/site/navigation/menu/web/portlet/template/dependencies) you can find some default ADTs currently available on Liferay Portal in order to build your own ADTs for Navigation portlet.
 
