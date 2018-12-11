@@ -1,6 +1,6 @@
 ## ADTs
 
-These are some common used ADTs for Asset Publishers:
+These are some common and useful ADTs to save your life with liferay.
 
 ### For Asset Publishers
 
