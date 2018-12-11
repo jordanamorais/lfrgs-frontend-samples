@@ -37,5 +37,5 @@ These are some common and useful ADTs to save your life with liferay.
 #### Setting up View in context rendering | Liferay 7.1
 
 * Select "View in context" in your Asset Publisher configuration
-* Create a page, add the portlet application (Ex: Blogs)
-* If your Asset Publisher is configured to show Blog Entries assets, the magic happens. Your blog entry will redirect to your /blogs page where the Blos Widget is in.
+* Create a page in your site (ex: blogs), and then add the respective widget asset application (Ex: Blogs)
+* If your Asset Publisher is configured to show Blog Entries assets, the magic happens. Your blog entry will redirect to your /blogs page where the Blos Widget is in it.
