@@ -34,7 +34,7 @@ These are some common and useful ADTs to save your life with liferay.
 * Select this page as a "Content display page""
 * When you are creating the web content, select this Page for it.
 
-#### Setting up View in context Pages | Liferay 7.1
+#### Setting up View in context rendering | Liferay 7.1
 
 * Select "View in context" in your Asset Publisher configuration
 * Create a page, add the portlet application (Ex: Blogs)
