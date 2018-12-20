@@ -16,6 +16,7 @@ These are some common and useful ADTs to save your life with liferay.
 
 * [Navigation ADT with active page](examples/site-navigation.ftl)
 * [Footer Navigation ADT](examnples/footer-site-navigation.ftl)
+* [Navigation ADT with active pages, children and icon](examples/navigation-with-children-and-icon.ftl)
 
 > FYI: [Here](https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-navigation/site-navigation-menu-web/src/main/resources/com/liferay/site/navigation/menu/web/portlet/template/dependencies) you can find some default ADTs currently available on Liferay Portal in order to build your own ADTs for Navigation portlet.
 
