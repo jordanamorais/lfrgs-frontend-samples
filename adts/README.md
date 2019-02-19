@@ -1,4 +1,4 @@
-## ADTs
+## ADTs - Application Display Templates
 
 These are some common and useful ADTs to save your life with liferay.
 
