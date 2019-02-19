@@ -19,7 +19,7 @@
                 <#assign enlacePaginaPortal = xPathSelector.selectSingleNode(rootElement).getStringValue()?trim>
 
                 <#if enlacePaginaPortal?? && enlacePaginaPortal!="">
-                    Entrou no if enlacePagina
+                    
                     <#list rootElement.elements() as dynamicElement>
                         <#if "enlacePaginaPortal" == dynamicElement.attributeValue("name")>
                             <#assign getURL = dynamicElement.element("dynamic-content").getData() />
@@ -51,9 +51,7 @@
 
                         </#if>
                     </#list>
-                    
-                    <#--  friendURL returned  -->
-                    <#--  ${friendly_page_link}  -->
+   
                 </#if>
 
                 <div class="uj-card">
