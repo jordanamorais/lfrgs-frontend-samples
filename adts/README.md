@@ -5,10 +5,10 @@ These are some common and useful ADTs to save your life with liferay.
 ### For Asset Publishers
 
 * [List items](examples/asset-publisher-list.ftl)
-* [List with download asset link](examples/asset-publisher-list-with-download.ftl)
-* [List with "view in context" render setting](examples/asset-publisher-list-view-in-context.ftl)
+* [List items with download asset link](examples/asset-publisher-list-with-download.ftl)
+* [List items with "view in context" render setting](examples/asset-publisher-list-view-in-context.ftl)
 * [Carousel Hero Banner](examples/asset-publisher-home-carousel.ftl)
-* [List with Liferay Link to Page (mounting friendly URL)](examples/asset-publisher-list-with-liferay-link-to-page.ftl)
+* [List items with Liferay Link to Page (mounting friendly URL)](examples/asset-publisher-list-with-liferay-link-to-page.ftl)
 * [Cards with link to page and bootstrap grid system](examples/asset-publisher-service-cards.ftl)
 * [Blog entries with image, title, publish date and subtitle](examples/asset-publisher-with-blog-entries.ftl)
 
