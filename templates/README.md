@@ -10,7 +10,3 @@ These are some useful content templates to use in your projects:
 > NOTE: Liferay 6.2 Freemarker doesn't like variables with dashes (hyphens) in them like reserved-article-title, so you have to use this way: `${.vars['reserved-article-title'].data}`.
 
 ---
-
-### How to create a Template and configure it for a Web Content
-
-Tutorial is coming soon.
