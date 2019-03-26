@@ -11,6 +11,7 @@ These are some common and useful ADTs to save your life with liferay.
 * [List items with Liferay Link to Page (mounting friendly URL)](examples/asset-publisher-list-with-liferay-link-to-page.ftl)
 * [Cards with link to page and bootstrap grid system](examples/asset-publisher-service-cards.ftl)
 * [Blog entries with image, title, publish date and subtitle](examples/asset-publisher-with-blog-entries.ftl)
+* [List items with download and preview url from documents and media field](examples/asset-publisher-list-with-url-from-documents-and-media-field.ftl)
 
 ### For Navigation
 
