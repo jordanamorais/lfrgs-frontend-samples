@@ -1,5 +1,7 @@
 ## Themes and Freemarker
 
+> Themes
+
 * [Theme Boilerplates](#theme-boilerplates)
 * [Creating a theme](#creating-a-theme)
     * [Installing Gulp and Yeoman](#installing-gulp-and-yeoman)
@@ -11,10 +13,14 @@
     * [Set the bundle which theme will be deployed](#set-the-bundle-which-theme-will-be-deployed)
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
-* [Freemarker Utilities](#freemarker-utilities)
 * [Theme Settings](#theme-settings)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
+
+> Freemarker
+
+* [Freemarker Samples](#freemarker-samples)
+* [Freemarker useful variables](#freemarker-useful-variables)
 
 ---
 
@@ -93,12 +99,14 @@ gulp init
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
 
-### Freemarker Utilities
+### Freemarker
+
+#### Freemarker samples
 
 * [User actionbar example getting user portrait url and portal logout](examples/user-actionbar-with-user-portrait.ftl)
 * [Sign-in and sign-out](examples/signin-and-signout.ftl)
 
-#### FTL useful variables
+#### Freemarker useful variables
 
 > Get Full URL (in navigation pages)
 
