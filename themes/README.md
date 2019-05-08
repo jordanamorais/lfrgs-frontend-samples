@@ -21,6 +21,7 @@
 
 * [Freemarker Samples](#freemarker-samples)
 * [Freemarker useful variables](#freemarker-useful-variables)
+* [Language in Freemarker](#language-in-freemarker)
 
 ---
 
@@ -185,7 +186,7 @@ list-one-column-dark
 
 > FYI: You can see a full example in the following file: [Navigation with mounted URLs changing / to #](examples/navigation-mouting-urls-with-route.ftl)
 
-#### Language in FTL files
+#### Language in freemarker
 
 ```freemarker
 <@liferay.language key="your-key-value" />
