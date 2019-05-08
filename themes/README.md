@@ -164,6 +164,17 @@ ${my_theme_setting_boolean?then('Y' , 'N')}
 12/03/2018 13:22:24
 ```
 
+> Get Selected Portlet Decorator
+```freemarker
+<#assign
+    portlet_display = portletDisplay
+    portlet_decorator_selected = htmlUtil.escape(portlet_display.getPortletDecoratorId())
+/>
+
+<#-- Output example from ${portlet_decorator_selected} -->
+list-one-column-dark
+```
+
 > FYI: You can see a full example in the following file: [Navigation with mounted URLs changing / to #](examples/navigation-mouting-urls-with-route.ftl)
 
 #### Language in FTL files
