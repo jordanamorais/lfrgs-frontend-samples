@@ -198,7 +198,7 @@ list-one-column-dark
 
 In order to understand more about theme settings, checkt out the [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
 
-#### To get boolean for checkbox theme setting
+#### Get checkbox theme setting as a boolean
 
 In `liferay-look-and-feel.xml` , create the settting <setttings> as a checkbox:
 
