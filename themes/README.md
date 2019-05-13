@@ -14,6 +14,7 @@
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
 * [Theme Settings](#theme-settings)
+* [JS Theme Utilities](#js-theme-utilities)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
 
@@ -221,6 +222,13 @@ To validate the variable, create somthing like this in your FTL files:
 <#if show_main_search>
 ...
 </#if>
+```
+
+### JS Theme Utilities
+
+> Get Language keys in your JS files
+```js
+Liferay.Language.get("language-key")
 ```
 
 ### SCSS Linter
