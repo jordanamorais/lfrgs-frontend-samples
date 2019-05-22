@@ -28,7 +28,7 @@ These are some useful aui taglib form validator examples:
 
 > Form attributes list
 
-You can find a useful list about the available [AUI Forms atrributes here](https://web.liferay.com/community/wiki/-/wiki/Main/Alloy+UI+Forms+%28aui%29/pop_up?controlPanelCategory=portlet_36#section-Alloy+UI+Forms+(aui)-Attributes)
+You can find a useful list about the available [AUI Forms atrributes here](https://docs.liferay.com/ce/portal/7.0-latest/taglibs/util-taglib/aui/button.html)
 
 > Forms and Validation Tips
 
