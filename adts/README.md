@@ -26,6 +26,10 @@ These are some common and useful ADTs to save your life with liferay.
 #### Liferay 7.1
 * [Language selector with select + globe icon](examples/language-selector-select-with-icon.ftl)
 
+### For Categories
+
+* [Categories List menu](examples/categories-list-menu.ftl)
+
 --- 
 
 ### Tips
