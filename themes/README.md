@@ -3,8 +3,6 @@
 > Themes
 
 * [Theme Boilerplates](#theme-boilerplates)
-* [Gulp Utilities](#gulp-utilities)
-    * [Configuring theme deploy to Nexus](#configuring-theme-deploy-to-nexus)
 * [Creating a theme](#creating-a-theme)
     * [Installing Gulp and Yeoman](#installing-gulp-and-yeoman)
     * [Installing liferay-theme tasks](#installing-liferay-theme-tasks)
@@ -13,6 +11,8 @@
     * [Atlas theme](#atlas-theme)
     * [Know which base theme you are using](#know-which-base-theme-you-are-using)
     * [Set the bundle which theme will be deployed](#set-the-bundle-which-theme-will-be-deployed)
+* [Gulp Utilities](#gulp-utilities)
+    * [Configuring theme deploy to Nexus](#configuring-theme-deploy-to-nexus)
 * [Embed Liferay portlets in theme](#embed-liferay-portlets-in-theme)
 * [Embed a Custom Portlet in theme](#embed-a-custom-portlet-in-theme)
 * [Theme Settings](#theme-settings)
@@ -32,52 +32,6 @@
 ### Theme Boilerplates
 
 * [AngularJS theme example](https://github.com/clovisdasilvaneto/Liferay-AngularJs-Theme)
-
----
-
-### Gulp Utilities
-
-#### Configuring theme deploy to Nexus
-
-> Install Nexus Deployer Plugin as a dependence
-
-```js
-npm install nexus-deployer --save-dev
-```
-
-> In `gulpfile.js` configure Nexus Deployer Artifact Task and its Settings
-
-```js
-var deployer = require('nexus-deployer');
-
-gulp.task('deploy:artifacts', ['build'], function(callback) {
-    var snapshot = {
-        groupId: 'cl.gob.isl.liferay',
-        artifactId: 'isl-theme',
-        version: '1.0.0',
-        packaging: 'war',
-        auth: {
-            username:'',
-            password:''
-        },
-        pomDir: 'dist/pom',
-        url: 'http://nexus.isl.gob.cl:8081/repository/isl-releases/',
-        artifact: 'dist/isl-theme.war',
-        noproxy: 'localhost',
-        cwd: '',
-        quiet: false,
-        insecure: true
-    };
- 
-    deployer.deploy(snapshot, callback);
-});
-```
-
-> To upload the artifact to Nexus, run the following task
-
-```js
-gulp deploy:artifacts
-```
 
 ---
 
@@ -138,6 +92,52 @@ gulp status
 
 ```js
 gulp init
+```
+
+---
+
+### Gulp Utilities
+
+#### Configuring theme deploy to Nexus
+
+> Install Nexus Deployer Plugin as a dependence
+
+```js
+npm install nexus-deployer --save-dev
+```
+
+> In `gulpfile.js` configure Nexus Deployer Artifact Task and its Settings
+
+```js
+var deployer = require('nexus-deployer');
+
+gulp.task('deploy:artifacts', ['build'], function(callback) {
+    var snapshot = {
+        groupId: 'cl.gob.isl.liferay',
+        artifactId: 'isl-theme',
+        version: '1.0.0',
+        packaging: 'war',
+        auth: {
+            username:'',
+            password:''
+        },
+        pomDir: 'dist/pom',
+        url: 'http://nexus.isl.gob.cl:8081/repository/isl-releases/',
+        artifact: 'dist/isl-theme.war',
+        noproxy: 'localhost',
+        cwd: '',
+        quiet: false,
+        insecure: true
+    };
+ 
+    deployer.deploy(snapshot, callback);
+});
+```
+
+> To upload the artifact to Nexus, run the following task
+
+```js
+gulp deploy:artifacts
 ```
 
 ---
