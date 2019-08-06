@@ -113,8 +113,8 @@ var deployer = require('nexus-deployer');
 
 gulp.task('deploy:artifacts', ['build'], function(callback) {
     var snapshot = {
-        groupId: 'cl.gob.isl.liferay',
-        artifactId: 'isl-theme',
+        groupId: 'customer.domain.example.liferay',
+        artifactId: 'themename-theme',
         version: '1.0.0',
         packaging: 'war',
         auth: {
@@ -122,8 +122,8 @@ gulp.task('deploy:artifacts', ['build'], function(callback) {
             password:''
         },
         pomDir: 'dist/pom',
-        url: 'http://nexus.isl.gob.cl:8081/repository/isl-releases/',
-        artifact: 'dist/isl-theme.war',
+        url: 'http://nexus.customerurl:8081/repository/customername-releases/',
+        artifact: 'dist/themename-theme.war',
         noproxy: 'localhost',
         cwd: '',
         quiet: false,
