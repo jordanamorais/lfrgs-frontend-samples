@@ -3,6 +3,8 @@
 > Themes
 
 * [Theme Boilerplates](#theme-boilerplates)
+* [Gulp Utilities](#gulp-utilities)
+    * [Configuring theme deploy to Nexus](#configuring-theme-deploy-to-nexus)
 * [Creating a theme](#creating-a-theme)
     * [Installing Gulp and Yeoman](#installing-gulp-and-yeoman)
     * [Installing liferay-theme tasks](#installing-liferay-theme-tasks)
@@ -17,6 +19,7 @@
 * [JS Theme Utilities](#js-theme-utilities)
 * [SCSS Linter](#scss-linter)
     * [Installing SCSS linter on VSCode](#installing-scss-linter-on-vscode)
+ 
 
 > Freemarker
 
@@ -29,6 +32,50 @@
 ### Theme Boilerplates
 
 * [AngularJS theme example](https://github.com/clovisdasilvaneto/Liferay-AngularJs-Theme)
+
+### Gulp Utilities
+
+#### Configuring theme deploy to Nexus
+
+> Install Nexus Deployer Plugin as a dependence
+
+```js
+npm install nexus-deployer --save-dev
+```
+
+> In `gulpfile.js` configure Nexus Deployer Artifact Task and its Settings
+
+```js
+var deployer = require('nexus-deployer');
+
+gulp.task('deploy:artifacts', ['build'], function(callback) {
+    var snapshot = {
+        groupId: 'cl.gob.isl.liferay',
+        artifactId: 'isl-theme',
+        version: '1.0.0',
+        packaging: 'war',
+        auth: {
+            username:'',
+            password:''
+        },
+        pomDir: 'dist/pom',
+        url: 'http://nexus.isl.gob.cl:8081/repository/isl-releases/',
+        artifact: 'dist/isl-theme.war',
+        noproxy: 'localhost',
+        cwd: '',
+        quiet: false,
+        insecure: true
+    };
+ 
+    deployer.deploy(snapshot, callback);
+});
+```
+
+> To upload the artifact to Nexus, run the following task
+
+```js
+gulp deploy:artifacts
+```
 
 ### Creating a theme
 
