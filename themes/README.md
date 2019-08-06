@@ -28,7 +28,6 @@
 * [Language in Freemarker](#language-in-freemarker)
 
 ---
----
 
 ### Theme Boilerplates
 
