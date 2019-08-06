@@ -28,10 +28,13 @@
 * [Language in Freemarker](#language-in-freemarker)
 
 ---
+---
 
 ### Theme Boilerplates
 
 * [AngularJS theme example](https://github.com/clovisdasilvaneto/Liferay-AngularJs-Theme)
+
+---
 
 ### Gulp Utilities
 
@@ -76,6 +79,8 @@ gulp.task('deploy:artifacts', ['build'], function(callback) {
 ```js
 gulp deploy:artifacts
 ```
+
+---
 
 ### Creating a theme
 
@@ -136,6 +141,8 @@ gulp status
 gulp init
 ```
 
+---
+
 ### Embed Liferay portlets in theme
 
 > Typically these codes are embeded inside _portal-normal.ftl_ or other theme ftls inside _templates_ theme folder.
@@ -144,9 +151,13 @@ gulp init
 * [Embed Breadcrumb Portlet](examples/embed-breadcrumb-portlet.ftl)
 * [Embed User Toolbar](examples/embed-user-toolbar.ftl)
 
+---
+
 ### Embed a Custom Portlet in theme
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
+
+---
 
 ### Freemarker
 
@@ -242,6 +253,8 @@ list-one-column-dark
 
 > FYI: You can create a **Language.properties** file in the following folder of your theme: **WEB-INF > src > content**
 
+---
+
 ### Theme Settings
 
 In order to understand more about theme settings, checkt out the [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
@@ -271,12 +284,16 @@ To validate the variable, create somthing like this in your FTL files:
 </#if>
 ```
 
+---
+
 ### JS Theme Utilities
 
 > Get Language keys in your JS files
 ```js
 Liferay.Language.get("language-key")
 ```
+
+---
 
 ### SCSS Linter
 
