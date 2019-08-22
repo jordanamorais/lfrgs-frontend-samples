@@ -2,7 +2,7 @@
 
 These are some common and useful ADTs to save your life with liferay.
 
-### For Asset Publishers
+### Asset Publishers ADTs
 
 * [List items](examples/asset-publisher-list.ftl)
 * [List items with download asset link](examples/asset-publisher-list-with-download.ftl)
@@ -12,8 +12,10 @@ These are some common and useful ADTs to save your life with liferay.
 * [Cards with link to page and bootstrap grid system](examples/asset-publisher-service-cards.ftl)
 * [Blog entries with image, title, publish date and subtitle](examples/asset-publisher-with-blog-entries.ftl)
 * [List items with download and preview url from documents and media field](examples/asset-publisher-list-with-url-from-documents-and-media-field.ftl)
+* [Image thumbs list with categories](examples/asset-publisher-image-thumbs-list-with-categories.ftl)
+* [Image thumbs list with categories for internal page](examples/asset-publisher-image-thumbs-list-internal-page.ftl)
 
-### For Navigation
+### Navigation ADTs
 
 * [Navigation ADT with active page](examples/site-navigation.ftl)
 * [Footer Navigation ADT](examnples/footer-site-navigation.ftl)
@@ -21,18 +23,18 @@ These are some common and useful ADTs to save your life with liferay.
 
 > FYI: [Here](https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-navigation/site-navigation-menu-web/src/main/resources/com/liferay/site/navigation/menu/web/portlet/template/dependencies) you can find some default ADTs currently available on Liferay Portal in order to build your own ADTs for Navigation portlet.
 
-### For Language Selector
+### Language Selector ADTs
 
 #### Liferay 7.1
 * [Language selector with select + globe icon](examples/language-selector-select-with-icon.ftl)
 
-### For Categories
+### Categories ADTS
 
 * [Categories List menu](examples/categories-list-menu.ftl)
 
 --- 
 
-### Tips
+### Setup Tips
 
 #### Create a view in context Page | Liferay 7.0
 
