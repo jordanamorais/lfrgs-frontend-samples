@@ -1,8 +1,6 @@
 <ul class="${prefix}-header-home__menu ${prefix}-header-menu-principal js-header-home-menu">
 
     #set($layoutLocalService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalService"))
-
-    ## Simulate a navigation menu group from Liferay 7 creating a page only in order to group the pages you want in this navigation
     #set($menuHeaderPrincipal = $layoutLocalService.fetchLayoutByFriendlyURL($layout.getGroupId(), false, "/menu-header-principal"))
 
     #foreach ($nav_item in $menuHeaderPrincipal.getChildren())
@@ -10,6 +8,8 @@
         #set ($nav_item_attr_selected="")
         #set ($nav_item_attr_has_popup="")
         #set ($nav_item_css_class="lfr-nav-item")
+        #set ($portal = $portalUtil.getPortal())
+        #set ($link = $portal.getLayoutURL($nav_item, $themeDisplay))
 
         #if ($nav_item.isSelected())
 			#set ($nav_item_attr_selected="aria-selected='true'")
@@ -17,7 +17,11 @@
 		#end
 
         <li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
-            <a aria-labelledby="layout_$nav_item.getLayoutId()" href="$nav_item.getURL()" $nav_item.getTarget() role="menuitem">$nav_item.getName()</a>
+            <a aria-labelledby="layout_$nav_item.getLayoutId()" href="$link" $nav_item.getTarget() role="menuitem">
+            
+                $nav_item.getName($locale)
+                
+            </a>
         </li>
 
     #end
