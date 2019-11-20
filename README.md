@@ -48,6 +48,6 @@ Some [Resources Importer tips](resources-importer/) for your Liferay Theme proje
 Looking for something to save your life with liferay 6.2?
 
 * [Simulate navigation menus feature from Liferay 7 in a Liferay 6.2 navigation](liferay-6.2/themes/navigation-simulating-navigation-menus.vm)
-* [All of the available Velocity variables for theme usage](https://github.com/liferay/liferay-portal-ee/blob/6.2.x/portal-web/docroot/html/themes/_unstyled/templates/init.vm)
+* [All of the available Velocity variables to use in themes](https://github.com/liferay/liferay-portal-ee/blob/6.2.x/portal-web/docroot/html/themes/_unstyled/templates/init.vm)
 * [Liferay DTDs Portal Definitions](https://docs.liferay.com/portal/6.2/definitions/)
 
