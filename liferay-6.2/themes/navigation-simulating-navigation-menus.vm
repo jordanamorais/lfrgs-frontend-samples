@@ -1,7 +1,9 @@
 <ul class="${prefix}-header-home__menu ${prefix}-header-menu-principal js-header-home-menu">
 
-    #set($layoutLocalService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalService"))
-    #set($menuHeaderPrincipal = $layoutLocalService.fetchLayoutByFriendlyURL($layout.getGroupId(), false, "/menu-header-principal"))
+    #set ($layoutLocalService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalService"))
+    #set ($menuHeaderPrincipal = $layoutLocalService.fetchLayoutByFriendlyURL($layout.getGroupId(), false, "/menu-header-principal"))
+
+    #set ($currentPage = $themeDisplay.getLayout())
 
     #foreach ($nav_item in $menuHeaderPrincipal.getChildren())
 
@@ -9,18 +11,20 @@
         #set ($nav_item_attr_has_popup="")
         #set ($nav_item_css_class="lfr-nav-item")
         #set ($portal = $portalUtil.getPortal())
-        #set ($link = $portal.getLayoutURL($nav_item, $themeDisplay))
 
-        #if ($nav_item.isSelected())
+        #set ($link = $portal.getLayoutURL($nav_item, $themeDisplay))
+        #set ($nav_item_is_selected = $nav_item.isSelected(true, $currentPage, $currentPage.getAncestorPlid()))
+
+        #if ($nav_item_is_selected)
 			#set ($nav_item_attr_selected="aria-selected='true'")
 			#set ($nav_item_css_class="$nav_item_css_class selected active")
 		#end
 
         <li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
-            <a aria-labelledby="layout_$nav_item.getLayoutId()" href="$link" $nav_item.getTarget() role="menuitem">
+            <a aria-labelledby="layout_$nav_item.getLayoutId()" href="$link" role="menuitem">
             
                 $nav_item.getName($locale)
-                
+
             </a>
         </li>
 
