@@ -30,11 +30,12 @@
 
 ---
 
+## Themes
+
 ### Theme Boilerplates
 
 * [AngularJS theme example](https://github.com/clovisdasilvaneto/Liferay-AngularJs-Theme)
 
----
 
 ### Creating a theme
 
@@ -95,8 +96,6 @@ gulp status
 gulp init
 ```
 
----
-
 ### Gulp Utilities
 
 #### Configuring theme deploy to Nexus
@@ -141,8 +140,6 @@ gulp.task('deploy:artifacts', ['build'], function(callback) {
 gulp deploy:artifacts
 ```
 
----
-
 ### Embed Liferay portlets in theme
 
 > Typically these codes are embeded inside _portal-normal.ftl_ or other theme ftls inside _templates_ theme folder.
@@ -151,13 +148,11 @@ gulp deploy:artifacts
 * [Embed Breadcrumb Portlet](examples/embed-breadcrumb-portlet.ftl)
 * [Embed User Toolbar](examples/embed-user-toolbar.ftl)
 
----
 
 ### Embed a Custom Portlet in theme
 
 * [Embed a custom portlet in theme](examples/embed-custom-portlet.ftl)
 
----
 
 ### Theme Settings
 
@@ -188,16 +183,12 @@ To validate the variable, create somthing like this in your FTL files:
 </#if>
 ```
 
----
-
 ### JS Theme Utilities
 
 > Get Language keys in your JS files
 ```js
 Liferay.Language.get("language-key")
 ```
-
----
 
 ### SCSS Linter
 
@@ -218,7 +209,7 @@ sudo gem install scss_lint
 
 ---
 
-### Freemarker
+## Freemarker
 
 #### Freemarker samples
 
