@@ -159,6 +159,65 @@ gulp deploy:artifacts
 
 ---
 
+### Theme Settings
+
+In order to understand more about theme settings, checkt out the [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
+
+#### Get checkbox theme setting as a boolean
+
+In `liferay-look-and-feel.xml` , create the settting <setttings> as a checkbox:
+
+```freemarker
+<setting configurable="true" key="show-main-search" type="checkbox" value="true" />
+```
+
+In `WEB-INF/src/content/Language.properties` create the key value for this theme setting.
+
+In `init_custom.ftl` file, assign the variable getting as boolean:
+
+```freemarker
+<#--  Show Search  -->
+<#assign show_main_search = getterUtil.getBoolean(theme_settings["show-main-search"])>
+```
+
+To validate the variable, create somthing like this in your FTL files:
+
+```freemarker
+<#if show_main_search>
+...
+</#if>
+```
+
+---
+
+### JS Theme Utilities
+
+> Get Language keys in your JS files
+```js
+Liferay.Language.get("language-key")
+```
+
+---
+
+### SCSS Linter
+
+A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
+Just copy and paste the `scss-lint.yml` file into your theme root folder.
+
+> FYI: You need to install the [scss-lint](https://github.com/brigade/scss-lint).
+
+#### Installing SCSS linter on VSCode
+
+* Install the *required ruby gem* below:
+
+```bash
+sudo gem install scss_lint
+```
+
+* Install *scss-lint* Extension on VSCode.
+
+---
+
 ### Freemarker
 
 #### Freemarker samples
@@ -277,66 +336,7 @@ list-one-column-dark
 
   </#macro>
 
-<#--  Call Macro Example -->
+<#--  Call Macro  -->
 <#assign title = curEntry.getTitle(locale)/>
 <@truncate_text text=title limit=100 />
 ```
-
----
-
-### Theme Settings
-
-In order to understand more about theme settings, checkt out the [Liferay Theme Settings Docs](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/making-themes-configurable-with-settings).
-
-#### Get checkbox theme setting as a boolean
-
-In `liferay-look-and-feel.xml` , create the settting <setttings> as a checkbox:
-
-```freemarker
-<setting configurable="true" key="show-main-search" type="checkbox" value="true" />
-```
-
-In `WEB-INF/src/content/Language.properties` create the key value for this theme setting.
-
-In `init_custom.ftl` file, assign the variable getting as boolean:
-
-```freemarker
-<#--  Show Search  -->
-<#assign show_main_search = getterUtil.getBoolean(theme_settings["show-main-search"])>
-```
-
-To validate the variable, create somthing like this in your FTL files:
-
-```freemarker
-<#if show_main_search>
-...
-</#if>
-```
-
----
-
-### JS Theme Utilities
-
-> Get Language keys in your JS files
-```js
-Liferay.Language.get("language-key")
-```
-
----
-
-### SCSS Linter
-
-A pre-configured SCSS Linter file to improve your SCSS writing with good practices.
-Just copy and paste the `scss-lint.yml` file into your theme root folder.
-
-> FYI: You need to install the [scss-lint](https://github.com/brigade/scss-lint).
-
-#### Installing SCSS linter on VSCode
-
-* Install the *required ruby gem* below:
-
-```bash
-sudo gem install scss_lint
-```
-
-* Install *scss-lint* Extension on VSCode.
