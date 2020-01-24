@@ -252,6 +252,35 @@ list-one-column-dark
 
 > FYI: You can create a **Language.properties** file in the following folder of your theme: **WEB-INF > src > content**
 
+#### Freemarker useful macros
+
+> Truncate Text
+```freemarker
+<#--  Truncate Text  -->
+  <#macro truncate_text text limit>
+
+    <#assign truncatedText = "" />
+
+    <#if text?length gt limit>
+
+      <#assign truncatedText = text?substring(0,limit)/>
+      <#assign truncatedText += "..."/>
+
+      ${truncatedText}
+
+    <#else>
+
+      ${text}
+
+    </#if>
+
+  </#macro>
+
+<#--  Call Macro Example -->
+<#assign title = curEntry.getTitle(locale)/>
+<@truncate_text text=title limit=100 />
+```
+
 ---
 
 ### Theme Settings
