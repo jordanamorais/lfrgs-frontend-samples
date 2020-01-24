@@ -26,6 +26,7 @@
 * [Freemarker Samples](#freemarker-samples)
 * [Freemarker useful variables](#freemarker-useful-variables)
 * [Language in Freemarker](#language-in-freemarker)
+* [Freemarker useful macros](#freemarker-useful-macros)
 
 ---
 
