@@ -147,7 +147,7 @@ gulp deploy:artifacts
 * [Embed Search Portlet](examples/embed-search-portlet.ftl)
 * [Embed Breadcrumb Portlet](examples/embed-breadcrumb-portlet.ftl)
 * [Embed User Toolbar](examples/embed-user-toolbar.ftl)
-* [Embed Journal Article](examples/embed-journal-article-portlet.ftl)
+* [Embed Journal Article](examples/embed-journal-article.ftl)
 
 
 ### Embed a Custom Portlet in theme
