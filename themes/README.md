@@ -142,11 +142,12 @@ gulp deploy:artifacts
 
 ### Embed Liferay portlets in theme
 
-> Typically these codes are embeded inside _portal-normal.ftl_ or other theme ftls inside _templates_ theme folder.
+> Typically these codes are embeded inside _portal-normal.ftl_ or other theme freemarkers files inside _templates_ theme folder.
 
 * [Embed Search Portlet](examples/embed-search-portlet.ftl)
 * [Embed Breadcrumb Portlet](examples/embed-breadcrumb-portlet.ftl)
 * [Embed User Toolbar](examples/embed-user-toolbar.ftl)
+* [Embed Journal Article](examples/embed-journal-article-portlet.ftl)
 
 
 ### Embed a Custom Portlet in theme
