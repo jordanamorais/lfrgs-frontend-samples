@@ -12,8 +12,9 @@ These are some common and useful ADTs to save your life with liferay.
 * [Cards with link to page and bootstrap grid system](examples/asset-publisher-service-cards.ftl)
 * [Blog entries with image, title, publish date and subtitle](examples/asset-publisher-with-blog-entries.ftl)
 * [List items with download and preview url from documents and media field](examples/asset-publisher-list-with-url-from-documents-and-media-field.ftl)
-* [Image thumbs list with categories](examples/asset-publisher-image-thumbs-list-with-categories.ftl)
-* [Image thumbs list with categories for internal page](examples/asset-publisher-image-thumbs-list-internal-page.ftl)
+* [Thumbnail images list with categories](examples/asset-publisher-image-thumbs-list-with-categories.ftl)
+* [Thumbnail images list with categories for internal page](examples/asset-publisher-image-thumbs-list-internal-page.ftl)
+* [Get label of specific radiobutton field from journal article structure](examples/get-label-from-radio-on-article-structure.ftl)
 
 ### Navigation ADTs
 
