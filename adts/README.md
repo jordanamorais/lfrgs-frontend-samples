@@ -14,7 +14,7 @@ These are some common and useful ADTs to save your life with liferay.
 * [List items with download and preview url from documents and media field](examples/asset-publisher-list-with-url-from-documents-and-media-field.ftl)
 * [Thumbnail images list with categories](examples/asset-publisher-image-thumbs-list-with-categories.ftl)
 * [Thumbnail images list with categories for internal page](examples/asset-publisher-image-thumbs-list-internal-page.ftl)
-* [Get label of specific radiobutton field from journal article structure](examples/get-label-from-radio-on-article-structure.ftl)
+* [Get label of specific radiobutton field from journal article structure](examples/get-label-of-radiobutton-from-journalarticle-structure.ftl)
 
 ### Navigation ADTs
 
