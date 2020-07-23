@@ -16,3 +16,24 @@ These are some useful content templates to use in your projects:
 
 > NOTE: Freemarker doesn't use variables with dashes (hyphens), like `reserved-article-title`, so to get the value of variable, you have to use this: `${.vars['reserved-article-title'].data}`.
 
+> Get formatted Display Date on templates
+
+```html
+<#-- Retrieve the published date meta data field of the web content -->
+<#assign displaydate = .vars['reserved-article-display-date'].data>
+
+<#-- Save the original page locale for later -->
+<#assign originalLocale = .locale>
+
+<#-- Set the page locale to the portals default locale -->
+<#setting locale = localeUtil.getDefault()>
+
+<#-- Parse the date to a date object -->
+<#assign displaydate = displaydate?datetime("EEE, d MMM yyyy HH:mm:ss Z")>
+
+<#-- Set the page locale back to the original page locale -->
+<#assign locale = originalLocale>
+                                
+${displaydate?string["dd/MM/yyyy"]}
+```
+
